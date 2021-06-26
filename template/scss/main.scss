@@ -1,0 +1,193 @@
+@import "./general";
+.main{
+    .servis{
+        // margin: 0 auto;
+        list-style-type: none;
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        justify-content: space-between;
+        .servis__item{
+            background-color: #F1F1F1;
+            height: 204px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    p{
+        position: relative;
+        &::after{
+            content: ">";
+            width: 20px;
+            top: 2px;
+            right: -30px;
+            position: absolute;
+            height: 2px;
+        
+        }
+        &:hover{
+            color: #D87D4A;;
+        }
+    }
+    &::before{
+        content: "";
+        width: 160px;
+        height: 160px;
+        background-image: url(../img/headphon.png);
+        background-repeat: no-repeat;
+background-size: contain;
+        position: relative;
+top: -50px;
+left: 30px;
+    }
+    &:nth-child(2)::before{
+        background-image: url(../img/spiker.png);
+    }
+    &:nth-child(3)::before{
+        background-image: url(../img/podsair.png);
+    }
+}
+  }
+  .zx{
+      position: relative;
+      top: 150px;
+    height: 560px;
+    width: 1000px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #D87D4A;
+    background-image: url(../img/speakerwhite.png);
+ background-repeat: no-repeat;
+ background-position: bottom left;
+    margin: 0 auto;
+    .text__wrapper{
+      
+        padding-top: 120px;
+        margin-left: 600px;
+    }
+    .zx__title{
+width: 100px;
+font-family: Manrope;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 2px;
+text-align: left;
+
+    }
+    .zx__text{
+        padding-top: 20px;
+        width: 250px;
+    }
+    .zx__btn{
+        margin-top: 30px;
+        background-color: #000;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        height: 50px;
+        width: 150px;
+        display: inline-block;
+        &:hover{
+            background: #4C4C4C;
+
+        }
+    }
+  }
+  .speaker{
+      background-image: url(../img/speaerhalf.png);
+      height: 320px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 200px;
+      background-position: center center;
+      border-radius: 8px;
+      .speaker__title{
+          margin-left: 90px;
+          padding-top: 100px;
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: left;
+        padding-bottom: 15px;
+      }
+  }
+  .speaker__btn{
+      width: 150px;
+      height: 50px;
+      padding: 10px;
+      display: inline-block;
+      margin-left: 90px;
+      background-color: transparent;
+      border: 1px solid #000000;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      &:hover{
+          background-color: #000;
+          color: #fff;
+      }
+  }
+  .yx{
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      width: 1000px;
+      margin-top: 50px;
+      .text__wrapper{
+        height: 320px;
+        width: 470px;
+        left: 735px;
+        top: 2277px;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+       padding-left: 100px;
+       padding-top: 100px;
+       .yx__title{
+    font-family: Manrope;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 38px;
+      letter-spacing: 2px;
+      padding-bottom: 15px;
+       }
+       .btn{
+           display: inline-block;
+           margin-left: 0px;
+           
+       }
+      }
+  }
+  .best{
+      margin-top: 100px;
+      width: 1000px;
+      margin:100px auto;
+      display: flex;
+      .text__wrapper{
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 50px;
+          .best__title{
+            font-family: Manrope;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            span{
+                color: #D87D4A;
+            }
+          }
+      }
+  }
+}
